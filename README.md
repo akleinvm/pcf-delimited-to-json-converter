@@ -25,7 +25,7 @@ This component uses the [PapaParse](https://www.papaparse.com/) library for effi
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/yourusername/pcf-delimited-to-json-converter.git
+    git clone https://github.com/akleinvm/pcf-delimited-to-json-converter.git
     cd pcf-delimited-to-json-converter
     ```
 
