@@ -1,8 +1,8 @@
-# PCF Delimited File to JSON Converter
+# Delimited to JSON Converter
 
 ## Overview
 
-The **PCF Delimited File to JSON Converter** is a PowerApps Component Framework (PCF) control built for canvas apps that allows users to upload any delimited file (such as CSV, TSV, pipe-delimited, etc.) and converts the data into JSON format. The JSON data is accessible via the component's output property, making it easy to integrate with other PowerApps logic.
+The **Delimited to JSON Converter** is a PowerApps Component Framework (PCF) control built for canvas apps that allows users to upload any delimited file (such as CSV, TSV, pipe-delimited, etc.) and converts the data into JSON format. The JSON data is accessible via the component's output property, making it easy to integrate with other PowerApps logic.
 
 This component uses the [PapaParse](https://www.papaparse.com/) library for efficient parsing of delimited files.
 
