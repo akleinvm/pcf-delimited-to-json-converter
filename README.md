@@ -1,13 +1,14 @@
-# PCF CSV to JSON Converter
+# PCF Delimited File to JSON Converter
 
 ## Overview
 
-The **PCF CSV to JSON Converter** is a PowerApps Component Framework (PCF) control that allows users to upload a comma-separated values (CSV) file and converts it into a `.txt` file in JSON format. This solution is particularly useful for transforming data from CSV format to a more flexible and readable JSON structure.
+The **PCF Delimited File to JSON Converter** is a PowerApps Component Framework (PCF) control that allows users to upload any delimited file (such as CSV, TSV, etc.) and converts it into a `.txt` file in JSON format. This solution is versatile for transforming data from various delimited formats into a more flexible and readable JSON structure.
 
 ## Features
 
-- Upload CSV files via a custom PCF control.
-- Converts CSV data to JSON format.
+- Upload any delimited file (e.g., CSV, TSV, pipe-delimited).
+- Converts delimited data to JSON format.
+- Supports custom delimiter selection.
 - Exports the converted JSON data as a `.txt` file.
 - Easy to integrate into model-driven apps in PowerApps.
 
@@ -22,8 +23,8 @@ The **PCF CSV to JSON Converter** is a PowerApps Component Framework (PCF) contr
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/yourusername/pcf-csv-to-json-converter.git
-    cd pcf-csv-to-json-converter
+    git clone https://github.com/yourusername/pcf-delimited-to-json-converter.git
+    cd pcf-delimited-to-json-converter
     ```
 
 2. Install dependencies:
@@ -46,18 +47,20 @@ The **PCF CSV to JSON Converter** is a PowerApps Component Framework (PCF) contr
 
 ## Usage
 
-1. Add the PCF CSV to JSON Converter component to your PowerApps form or canvas app.
-2. Upload a CSV file using the control.
-3. The control will convert the CSV data into a JSON object.
-4. Download the `.txt` file containing the JSON data.
+1. Add the PCF Delimited File to JSON Converter component to your PowerApps form or canvas app.
+2. Upload a delimited file using the control (default is comma, but can be changed).
+3. Select the appropriate delimiter if necessary (e.g., comma `,`, tab `\t`, pipe `|`, etc.).
+4. The control will convert the delimited data into a JSON object.
+5. Download the `.txt` file containing the JSON data.
 
 ## Example
 
-A CSV file like this:
-```csv
-name,age,city
-John Doe,28,New York
-Jane Smith,34,Los Angeles
+A pipe-delimited file like this:
+
+```txt
+name|age|city
+John Doe|28|New York
+Jane Smith|34|Los Angeles
 ```
 
 Will be converted to JSON format like this:
