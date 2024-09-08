@@ -2,15 +2,17 @@
 
 ## Overview
 
-The **PCF Delimited File to JSON Converter** is a PowerApps Component Framework (PCF) control that allows users to upload any delimited file (such as CSV, TSV, etc.) and converts it into a `.txt` file in JSON format. This solution is versatile for transforming data from various delimited formats into a more flexible and readable JSON structure.
+The **PCF Delimited File to JSON Converter** is a PowerApps Component Framework (PCF) control built for canvas apps that allows users to upload any delimited file (such as CSV, TSV, pipe-delimited, etc.) and converts the data into JSON format. The JSON data is accessible via the component's output property, making it easy to integrate with other PowerApps logic.
+
+This component uses the [PapaParse](https://www.papaparse.com/) library for efficient parsing of delimited files.
 
 ## Features
 
 - Upload any delimited file (e.g., CSV, TSV, pipe-delimited).
+- Auto-detects used delimiter.
 - Converts delimited data to JSON format.
-- Supports custom delimiter selection.
-- Exports the converted JSON data as a `.txt` file.
-- Easy to integrate into model-driven apps in PowerApps.
+- Easy to integrate into PowerApps canvas apps.
+- JSON output is accessible through the component’s output property.
 
 ## Prerequisites
 
@@ -47,11 +49,11 @@ The **PCF Delimited File to JSON Converter** is a PowerApps Component Framework 
 
 ## Usage
 
-1. Add the PCF Delimited File to JSON Converter component to your PowerApps form or canvas app.
+1. Add the **Delimited File to JSON Converter** component to your PowerApps canvas app.
 2. Upload a delimited file using the control (default is comma, but can be changed).
 3. Select the appropriate delimiter if necessary (e.g., comma `,`, tab `\t`, pipe `|`, etc.).
-4. The control will convert the delimited data into a JSON object.
-5. Download the `.txt` file containing the JSON data.
+4. The control will convert the delimited data into a JSON string.
+5. The JSON output will be available in the component's output property, which can be used for further data manipulation in your canvas app.
 
 ## Example
 
